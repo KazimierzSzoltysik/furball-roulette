@@ -20,9 +20,12 @@ gem 'tzinfo-data', platforms: %i[windows jruby]
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
-  gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'simplecov'
+  gem 'webmock'
 end
 
 group :development do
