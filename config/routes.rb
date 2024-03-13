@@ -10,4 +10,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  namespace 'api' do
+    scope module: 'v1', path: '1.0', as: 'v1' do
+      get 'pets/random', to: 'pets#random'
+    end
+  end
 end
